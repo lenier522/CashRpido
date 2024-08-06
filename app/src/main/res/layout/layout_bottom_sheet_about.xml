@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+                android:id="@+id/drag_handle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryText"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/aboutVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Versión 1.3"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/secondaryText"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/aboutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/esta_es_una_aplicaci_n_de_finanzas_dise_ada_para_ayudarte"
+                android:textSize="16sp"
+                android:textColor="@color/primaryText"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/aboutDeveloper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desarrollador_lenier_cruz_p_rez"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryText"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/aboutDesigner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dise_ador_lenier_cruz_p_rez"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryText"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/aboutCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pa_s_de_origen_cuba"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryText"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/googlePlayLogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_google_play"
+                    android:contentDescription="Google Play"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/facebookLogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_facebook"
+                    android:contentDescription="Facebook"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/whatssapLogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_whatssap"
+                    android:contentDescription="Google Play"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

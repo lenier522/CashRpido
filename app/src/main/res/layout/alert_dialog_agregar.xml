@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el método de pago:"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarjeta"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"/>
+
+            <RadioButton
+                android:id="@+id/radio_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Efectivo"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"/>
+        </RadioGroup>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

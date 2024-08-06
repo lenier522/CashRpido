@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">CashRápido</string>
+    <string name="title_home">Cuentas</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="_0_00">$ 0.00</string>
+    <string name="tarjeta">Tarjeta</string>
+    <string name="navigation_drawer_open">abrir</string>
+    <string name="navigation_drawer_close">cerrar</string>
+
+    <string-array name="payment_methods">
+        <item>Efectivo</item>
+        <item>Tarjeta</item>
+    </string-array>
+
+    <string name="btn_agregar">Agregar</string>
+    <string name="primero_realiza_un_c_lculo">Primero realiza un cálculo</string>
+    <string name="seleccione_la_categor_a_para_agregar">"Seleccione la categoría para agregar "</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="por_favor_seleccione_una_categor_a">Por favor, seleccione una categoría</string>
+    <string name="el_resultado_de_la_calculadora_no_es_v_lido">El resultado de la calculadora no es válido</string>
+    <string name="resultado_no_v_lido">Resultado no válido</string>
+    <string name="resultado_actualizado_con_xito">Resultado actualizado con éxito</string>
+    <string name="error_al_actualizar_el_resultado">Error al actualizar el resultado</string>
+    <string name="resultado_agregado_con_xito">Resultado agregado con éxito</string>
+    <string name="error_al_agregar_el_resultado">Error al agregar el resultado</string>
+    <string name="quitar">Quitar</string>
+    <string name="seleccione_la_categor_a_para_quitar">"Seleccione la categoría para quitar "</string>
+
+
+
+    <!--Categorias-->
+    <string name="title_categoria">Categorías</string>
+    <string name="c_ropa">Ropa</string>
+    <string name="c_comida">Comida</string>
+    <string name="c_casa">Casa</string>
+    <string name="c_fitnes">Fitness</string>
+    <string name="c_transporte">Transporte</string>
+    <string name="c_mascotas">Mascotas</string>
+    <string name="c_niños">Niños</string>
+    <string name="c_movil">Móvil</string>
+    <string name="c_educacion">Educación</string>
+    <string name="c_electricidad">Electricidad</string>
+    <string name="c_internet">Internet</string>
+    <string name="c_agua">Agua</string>
+
+
+    <string name="presione_de_nuevo_para_salir_de_la_app">Presione de nuevo para salir de la App</string>
+    <string name="salir">Salir</string>
+    <string name="seguro_que_desea_salir_de_la_app">¿Seguro que desea Salir de la App?</string>
+    <string name="t_mate_5_minutos_para_ver_tus_ingresos">Tómate 5 minutos para ver tus ingresos</string>
+    <string name="seleccionar_fecha">Seleccionar fecha</string>
+    <string name="la_base_de_datos_est_vac_a">La base de datos está vacía.</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="agregar_m_s_tarjetas_de_cr_dito">Agregar más tarjetas de crédito</string>
+    <string name="cambiar_el_lenguaje_de_la_app">Lenguaje</string>
+    <string name="cambiar_el_tema_de_la_aplicaci_n">Cambiar el tema de la aplicación</string>
+    <string name="obtener_licencia_de_pago">Obtener licencia de pago</string>
+    <string name="compartir">Compartir</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="backup">Backup</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="estad_sticas">Estadísticas</string>
+    <string name="seleccione_una_fecha">Seleccione una Fecha</string>
+    <string name="no_hay_datos_disponibles_para_la_fecha_seleccionada">No hay datos disponibles para la fecha seleccionada.</string>
+    <string name="gastos_por_categor_a">Gastos por Categoría</string>
+    <string name="desactivar">Desactivar</string>
+    <string name="activar">Activar</string>
+    <string name="notificaciones_activadas">Notificaciones activadas</string>
+    <string name="notificaciones_desactivadas">Notificaciones desactivadas</string>
+    <string name="esta_es_una_aplicaci_n_de_finanzas_dise_ada_para_ayudarte">Esta es una aplicación de finanzas diseñada para ayudarte a gestionar tus gastos e ingresos de manera eficiente y efectiva.</string>
+    <string name="descarga_la_aplicaci_n_cashrapido_de_la_google_play">Descarga la aplicación CashRapido de la Google Play: https://play.google.com/store/apps/details?id=cu.lenier.cashrpido</string>
+    <string name="compartir_cashrapido">Compartir CashRapido</string>
+    <string name="seleccione_una_opci_n">Seleccione una opción</string>
+    <string name="archivo_de_respaldo_no_encontrado">Archivo de respaldo no encontrado</string>
+    <string name="datos_importados_correctamente_desde">"Datos importados correctamente desde: "</string>
+    <string name="error_al_importar_los_datos">Error al importar los datos</string>
+    <string name="datos_exportados_correctamente_a">"Datos exportados correctamente a: "</string>
+    <string name="error_al_exportar_los_datos">Error al exportar los datos</string>
+    <string name="restablecer_app">Restablecer App</string>
+    <string name="est_s_seguro_de_que_deseas_restablecer_la_aplicacis">¿Estás seguro de que deseas restablecer la aplicación? Se perderán todos los datos.</string>
+    <string name="borrar">Borrar</string>
+    <string name="desarrollador_lenier_cruz_p_rez">Desarrollador: Lenier Cruz Pérez</string>
+    <string name="dise_ador_lenier_cruz_p_rez">Diseñador: Lenier Cruz Pérez</string>
+    <string name="pa_s_de_origen_cuba">País de Origen: Cuba</string>
+
+
+
+    <string name="inicio">Inicio</string>
+    <string name="estadisticas">Estadisticas</string>
+    <string name="m_s">Más</string>
+    <string name="cambiar">Cambiar</string>
+
+
+</resources>

@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">CashRapide</string>
+    <string name="title_home">Comptes</string>
+    <string name="efectivo">Espèces</string>
+    <string name="_0_00">€ 0.00</string>
+    <string name="tarjeta">Carte</string>
+    <string name="navigation_drawer_open">ouvrir</string>
+    <string name="navigation_drawer_close">fermer</string>
+
+    <string-array name="payment_methods">
+        <item>Espèces</item>
+        <item>Carte</item>
+    </string-array>
+
+    <string name="btn_agregar">Ajouter</string>
+    <string name="primero_realiza_un_c_lculo">Faites d\'abord un calcul</string>
+    <string name="seleccione_la_categor_a_para_agregar">Sélectionnez la catégorie à ajouter</string>
+    <string name="cancelar">Annuler</string>
+    <string name="por_favor_seleccione_una_categor_a">Veuillez sélectionner une catégorie</string>
+    <string name="el_resultado_de_la_calculadora_no_es_v_lido">Le résultat de la calculatrice n\'est pas valide</string>
+    <string name="resultado_no_v_lido">Résultat invalide</string>
+    <string name="resultado_actualizado_con_xito">Résultat mis à jour avec succès</string>
+    <string name="error_al_actualizar_el_resultado">Erreur lors de la mise à jour du résultat</string>
+    <string name="resultado_agregado_con_xito">Résultat ajouté avec succès</string>
+    <string name="error_al_agregar_el_resultado">Erreur lors de l\'ajout du résultat</string>
+    <string name="quitar">Retirer</string>
+    <string name="seleccione_la_categor_a_para_quitar">Sélectionnez la catégorie à retirer</string>
+
+    <!--Categorias-->
+    <string name="title_categoria">Catégories</string>
+    <string name="c_ropa">Vêtements</string>
+    <string name="c_comida">Nourriture</string>
+    <string name="c_casa">Maison</string>
+    <string name="c_fitnes">Fitness</string>
+    <string name="c_transporte">Transport</string>
+    <string name="c_mascotas">Animaux</string>
+    <string name="c_niños">Enfants</string>
+    <string name="c_movil">Mobile</string>
+    <string name="c_educacion">Éducation</string>
+    <string name="c_electricidad">Électricité</string>
+    <string name="c_internet">Internet</string>
+    <string name="c_agua">Eau</string>
+
+    <string name="presione_de_nuevo_para_salir_de_la_app">Appuyez à nouveau pour quitter l\'application</string>
+    <string name="salir">Quitter</string>
+    <string name="seguro_que_desea_salir_de_la_app">Êtes-vous sûr de vouloir quitter l\'application ?</string>
+    <string name="t_mate_5_minutos_para_ver_tus_ingresos">Prenez 5 minutes pour voir vos revenus</string>
+    <string name="seleccionar_fecha">Sélectionner une date</string>
+    <string name="la_base_de_datos_est_vac_a">La base de données est vide.</string>
+    <string name="configuraci_n">Paramètres</string>
+    <string name="agregar_m_s_tarjetas_de_cr_dito">Ajouter plus de cartes de crédit</string>
+    <string name="cambiar_el_lenguaje_de_la_app">Langue</string>
+    <string name="cambiar_el_tema_de_la_aplicaci_n">Changer le thème de l\'application</string>
+    <string name="obtener_licencia_de_pago">Obtenir une licence de paiement</string>
+    <string name="compartir">Partager</string>
+    <string name="notificaciones">Notifications</string>
+    <string name="backup">Sauvegarde</string>
+    <string name="acerca_de">À propos</string>
+    <string name="estad_sticas">Statistiques</string>
+    <string name="seleccione_una_fecha">Sélectionnez une Date</string>
+    <string name="no_hay_datos_disponibles_para_la_fecha_seleccionada">Aucune donnée disponible pour la date sélectionnée.</string>
+    <string name="gastos_por_categor_a">Dépenses par Catégorie</string>
+    <string name="desactivar">Désactiver</string>
+    <string name="activar">Activer</string>
+    <string name="notificaciones_activadas">Notifications activées</string>
+    <string name="notificaciones_desactivadas">Notifications désactivées</string>
+    <string name="esta_es_una_aplicaci_n_de_finanzas_dise_ada_para_ayudarte">Ceci est une application financière conçue pour vous aider à gérer vos dépenses et revenus de manière efficace et efficiente.</string>
+    <string name="descarga_la_aplicaci_n_cashrapido_de_la_google_play">Téléchargez l\'application CashRapide sur Google Play : https://play.google.com/store/apps/details?id=cu.lenier.cashrpido</string>
+    <string name="compartir_cashrapido">Partager CashRapide</string>
+    <string name="seleccione_una_opci_n">Sélectionnez une option</string>
+    <string name="archivo_de_respaldo_no_encontrado">Fichier de sauvegarde introuvable</string>
+    <string name="datos_importados_correctamente_desde">Données importées avec succès depuis : </string>
+    <string name="error_al_importar_los_datos">Erreur lors de l\'importation des données</string>
+    <string name="datos_exportados_correctamente_a">Données exportées avec succès vers : </string>
+    <string name="error_al_exportar_los_datos">Erreur lors de l\'exportation des données</string>
+    <string name="restablecer_app">Réinitialiser l\'App</string>
+    <string name="est_s_seguro_de_que_deseas_restablecer_la_aplicacis">Êtes-vous sûr de vouloir réinitialiser l\'application ? Toutes les données seront perdues.</string>
+    <string name="borrar">Supprimer</string>
+    <string name="desarrollador_lenier_cruz_p_rez">Développeur : Lenier Cruz Pérez</string>
+    <string name="dise_ador_lenier_cruz_p_rez">Designer : Lenier Cruz Pérez</string>
+    <string name="pa_s_de_origen_cuba">Pays d\'origine : Cuba</string>
+
+
+
+    <string name="inicio">Accueil</string>
+    <string name="estadisticas">Statistiques</string>
+    <string name="m_s">Plus</string>
+    <string name="cambiar">Changer</string>
+
+</resources>

@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">CashRapid</string>
+    <string name="title_home">Accounts</string>
+    <string name="efectivo">Cash</string>
+    <string name="_0_00">$ 0.00</string>
+    <string name="tarjeta">Card</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string-array name="payment_methods">
+        <item>Cash</item>
+        <item>Card</item>
+    </string-array>
+
+    <string name="btn_agregar">Add</string>
+    <string name="primero_realiza_un_c_lculo">First make a calculation</string>
+    <string name="seleccione_la_categor_a_para_agregar">"Select the category to add"</string>
+    <string name="cancelar">Cancel</string>
+    <string name="por_favor_seleccione_una_categor_a">Please select a category</string>
+    <string name="el_resultado_de_la_calculadora_no_es_v_lido">The calculator result is not valid</string>
+    <string name="resultado_no_v_lido">Invalid result</string>
+    <string name="resultado_actualizado_con_xito">Result updated successfully</string>
+    <string name="error_al_actualizar_el_resultado">Error updating the result</string>
+    <string name="resultado_agregado_con_xito">Result added successfully</string>
+    <string name="error_al_agregar_el_resultado">Error adding the result</string>
+    <string name="quitar">Remove</string>
+    <string name="seleccione_la_categor_a_para_quitar">"Select the category to remove"</string>
+
+    <!--Categorias-->
+    <string name="title_categoria">Categories</string>
+    <string name="c_ropa">Clothing</string>
+    <string name="c_comida">Food</string>
+    <string name="c_casa">Home</string>
+    <string name="c_fitnes">Fitness</string>
+    <string name="c_transporte">Transport</string>
+    <string name="c_mascotas">Pets</string>
+    <string name="c_niños">Children</string>
+    <string name="c_movil">Mobile</string>
+    <string name="c_educacion">Education</string>
+    <string name="c_electricidad">Electricity</string>
+    <string name="c_internet">Internet</string>
+    <string name="c_agua">Water</string>
+
+    <string name="presione_de_nuevo_para_salir_de_la_app">Press again to exit the App</string>
+    <string name="salir">Exit</string>
+    <string name="seguro_que_desea_salir_de_la_app">Are you sure you want to exit the App?</string>
+    <string name="t_mate_5_minutos_para_ver_tus_ingresos">Take 5 minutes to see your income</string>
+    <string name="seleccionar_fecha">Select date</string>
+    <string name="la_base_de_datos_est_vac_a">The database is empty.</string>
+    <string name="configuraci_n">Settings</string>
+    <string name="agregar_m_s_tarjetas_de_cr_dito">Add more credit cards</string>
+    <string name="cambiar_el_lenguaje_de_la_app">Language</string>
+    <string name="cambiar_el_tema_de_la_aplicaci_n">Change the application theme</string>
+    <string name="obtener_licencia_de_pago">Get payment license</string>
+    <string name="compartir">Share</string>
+    <string name="notificaciones">Notifications</string>
+    <string name="backup">Backup</string>
+    <string name="acerca_de">About</string>
+    <string name="estad_sticas">Statistics</string>
+    <string name="seleccione_una_fecha">Select a Date</string>
+    <string name="no_hay_datos_disponibles_para_la_fecha_seleccionada">No data available for the selected date.</string>
+    <string name="gastos_por_categor_a">Expenses by Category</string>
+    <string name="desactivar">Deactivate</string>
+    <string name="activar">Activate</string>
+    <string name="notificaciones_activadas">Notifications activated</string>
+    <string name="notificaciones_desactivadas">Notifications deactivated</string>
+    <string name="esta_es_una_aplicaci_n_de_finanzas_dise_ada_para_ayudarte">This is a finance application designed to help you manage your expenses and income efficiently and effectively.</string>
+    <string name="descarga_la_aplicaci_n_cashrapido_de_la_google_play">Download the CashRapid application from Google Play: https://play.google.com/store/apps/details?id=cu.lenier.cashrpido</string>
+    <string name="compartir_cashrapido">Share CashRapid</string>
+    <string name="seleccione_una_opci_n">Select an option</string>
+    <string name="archivo_de_respaldo_no_encontrado">Backup file not found</string>
+    <string name="datos_importados_correctamente_desde">"Data imported successfully from: "</string>
+    <string name="error_al_importar_los_datos">Error importing data</string>
+    <string name="datos_exportados_correctamente_a">"Data exported successfully to: "</string>
+    <string name="error_al_exportar_los_datos">Error exporting data</string>
+    <string name="restablecer_app">Reset App</string>
+    <string name="est_s_seguro_de_que_deseas_restablecer_la_aplicacis">Are you sure you want to reset the application? All data will be lost.</string>
+    <string name="borrar">Delete</string>
+    <string name="desarrollador_lenier_cruz_p_rez">Developer: Lenier Cruz Pérez</string>
+    <string name="dise_ador_lenier_cruz_p_rez">Designer: Lenier Cruz Pérez</string>
+    <string name="pa_s_de_origen_cuba">Country of Origin: Cuba</string>
+
+
+    <string name="inicio">Home</string>
+    <string name="estadisticas">Statistics</string>
+    <string name="m_s">More</string>
+    <string name="cambiar">Change</string>
+
+
+</resources>

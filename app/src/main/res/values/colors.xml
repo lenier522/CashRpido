@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#4CAF50</color> <!-- Verde primario -->
+    <color name="colorPrimaryDark">#388E3C</color> <!-- Verde primario oscuro -->
+    <color name="colorAccent">#FF4081</color> <!-- Color de acento -->
+    <color name="colorFloating">#6FEC62</color>
+
+    <color name="primaryText">#000000</color>
+    <color name="secondaryText">#7A7A7A</color>
+    <color name="waveColor">#FF9800</color>
+
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CashRápido" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Definir animaciones de transición -->
+        <item name="android:windowAnimationStyle">@style/AppWindowAnimation</item>
+    </style>
+
+    <style name="Theme.CashRápido" parent="Base.Theme.CashRápido" />
+
+    <!-- Si es necesario, puedes definir un tema específico para NavigationView -->
+    <style name="AppTheme.NavigationView" parent="Theme.AppCompat">
+        <item name="colorControlActivated">@color/nav_item_selector</item>
+    </style>
+
+
+    <!-- Estilo para el diálogo -->
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+</resources>
