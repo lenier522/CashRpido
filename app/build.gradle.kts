@@ -10,8 +10,8 @@ android {
         applicationId = "cu.lenier.cashrpido"
         minSdk = 23
         targetSdk = 35
-        versionCode = 33062030
-        versionName = "1.3"
+        versionCode = 40122433
+        versionName = "1.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
