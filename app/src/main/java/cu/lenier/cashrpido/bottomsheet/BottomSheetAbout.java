@@ -29,7 +29,7 @@ public class BottomSheetAbout extends BottomSheetDialogFragment {
         TextView aboutTitle = view.findViewById(R.id.aboutTitle);
         TextView aboutDescription = view.findViewById(R.id.aboutDescription);
 
-        // Aquí puedes establecer cualquier información adicional o lógica que necesites
+    
         aboutTitle.setText(R.string.acerca_de);
         aboutDescription.setText(R.string.esta_es_una_aplicaci_n_de_finanzas_dise_ada_para_ayudarte);
 
