@@ -1,8 +1,8 @@
 package cu.lenier.cashrpido.fragment;
 
-import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,12 +15,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.animation.Easing;
+import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.google.android.material.datepicker.MaterialDatePicker;
 
@@ -35,7 +35,7 @@ import cu.lenier.cashrpido.R;
 
 public class Fragment_Static extends Fragment {
 
-    private BarChart barChart;
+    private PieChart pieChart;
     private Button dateButton;
     private Calendar calendar;
     private String currentDate;
@@ -51,7 +51,7 @@ public class Fragment_Static extends Fragment {
             getActivity().setTitle(getString(R.string.estad_sticas));
         }
 
-        barChart = view.findViewById(R.id.bar_chart);
+        pieChart = view.findViewById(R.id.pie_chart);
         dateButton = view.findViewById(R.id.date_button);
         noDataTextView = view.findViewById(R.id.no_data_text_view);
         calendar = Calendar.getInstance();
@@ -80,7 +80,7 @@ public class Fragment_Static extends Fragment {
 
         materialDatePicker.addOnPositiveButtonClickListener(selection -> {
             calendar.setTimeInMillis(selection);
-            //Ajustar Fecha
+            // Ajustar Fecha
             calendar.add(Calendar.DAY_OF_MONTH, 1);
             String selectDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(calendar.getTime());
             cargarDatosYMostrarGrafico(selectDate);
@@ -88,17 +88,13 @@ public class Fragment_Static extends Fragment {
         });
 
         materialDatePicker.show(getParentFragmentManager(), "DATE_PICKER");
-
     }
 
     private void cargarDatosYMostrarGrafico(String date) {
         SharedPreferences sharedPreferences = requireContext().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         Map<String, ?> allEntries = sharedPreferences.getAll();
 
-        List<BarEntry> entries = new ArrayList<>();
-        List<String> categories = new ArrayList<>();
-        int index = 0;
-
+        List<PieEntry> entries = new ArrayList<>();
         for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
             String key = entry.getKey();
             if (key.startsWith(date)) {
@@ -107,9 +103,7 @@ public class Fragment_Static extends Fragment {
                 if (value instanceof String) {
                     try {
                         float amount = Float.parseFloat((String) value);
-                        entries.add(new BarEntry(index, amount));
-                        categories.add(category);
-                        index++;
+                        entries.add(new PieEntry(amount, category));
                     } catch (NumberFormatException e) {
                         // No hacemos nada si no podemos convertir el valor a float
                     }
@@ -120,29 +114,35 @@ public class Fragment_Static extends Fragment {
         if (entries.isEmpty()) {
             // Mostrar el texto de error cuando no hay datos
             noDataTextView.setVisibility(View.VISIBLE);
-            barChart.setVisibility(View.GONE);
+            pieChart.setVisibility(View.GONE);
             noDataTextView.setText(R.string.no_hay_datos_disponibles_para_la_fecha_seleccionada);
         } else {
             // Mostrar el gráfico cuando hay datos
             noDataTextView.setVisibility(View.GONE);
-            barChart.setVisibility(View.VISIBLE);
+            pieChart.setVisibility(View.VISIBLE);
 
-            BarDataSet dataSet = new BarDataSet(entries, getString(R.string.gastos_por_categor_a));
+            PieDataSet dataSet = new PieDataSet(entries, getString(R.string.gastos_por_categor_a));
             dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-            BarData barData = new BarData(dataSet);
-            barData.setBarWidth(0.9f);
+            PieData pieData = new PieData(dataSet);
+            pieData.setValueTextSize(12f);
+            pieData.setValueTextColor(Color.WHITE);
 
-            barChart.setData(barData);
-            barChart.setFitBars(true);
-            barChart.getXAxis().setValueFormatter(new IndexAxisValueFormatter(categories));
-            barChart.getXAxis().setGranularity(1f);
-            barChart.getXAxis().setGranularityEnabled(true);
+            pieChart.setData(pieData);
+            pieChart.setDrawHoleEnabled(true);
+            pieChart.setHoleRadius(40f);
+            pieChart.setTransparentCircleRadius(45f);
+            pieChart.setEntryLabelColor(Color.BLACK);
+            pieChart.setEntryLabelTextSize(12f);
 
             Description description = new Description();
-            description.setText(R.string.gastos_por_categor_a + " - " + date);
-            barChart.setDescription(description);
+            description.setText(getString(R.string.gastos_por_categor_a) + " - " + date);
+            pieChart.setDescription(description);
 
-            barChart.invalidate(); // Refresh the chart
+            // Agregar animaciones
+            pieChart.animateY(1400, Easing.EaseInOutQuad);
+            pieChart.animateX(1400, Easing.EaseInOutQuad);
+
+            pieChart.invalidate(); // Refresh the chart
         }
     }
 }

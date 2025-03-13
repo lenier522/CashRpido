@@ -38,7 +38,6 @@ public class Fragment_Home extends Fragment {
     private TextView cash, tarjeta;
     private ResultadoDbHelper dbHelper;
     private DecimalFormat formatoDecimal;
-    private FloatingActionButton fab;
 
     private TextView idRopa, idTransporte, idMascotas, idCasa,
             idFood, idBaby, idPhone, idFitness, idEduc, idElect, idAgua, idInternet;
@@ -184,7 +183,6 @@ public class Fragment_Home extends Fragment {
         cash = view.findViewById(R.id.textView3);
         tarjeta = view.findViewById(R.id.textView2);
 
-        fab = view.findViewById(R.id.floatingActionButton);
 
         dbHelper = new ResultadoDbHelper(getActivity());
         formatoDecimal = new DecimalFormat("#0.00");
@@ -193,10 +191,6 @@ public class Fragment_Home extends Fragment {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
         currentDate = dateFormat.format(calendar.getTime());
 
-        fab.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), ActivityAgregar.class);
-            startActivity(intent);
-        });
 
 
         dateButton = view.findViewById(R.id.date_button); // Botón para seleccionar la fecha

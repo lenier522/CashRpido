@@ -3,6 +3,8 @@ package cu.lenier.cashrpido.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
 import android.util.Base64;
 import android.util.Log;
@@ -62,6 +64,8 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHo
         SettingItem item = settingItems.get(position);
         holder.settingTitle.setText(item.getTitle());
         holder.settingIcon.setImageResource(item.getIconResId());
+
+
 
         holder.itemView.setOnClickListener(v -> {
             if (item.getTitle().equals(context.getString(R.string.acerca_de))) {

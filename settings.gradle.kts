@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CashRápido"
 include(":app")
- 
+include(":UpdateChecker")

@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">CashRápido</string>
     <string name="title_home">Cuentas</string>
+    <string name="title_card">Tarjetas</string>
     <string name="efectivo">Efectivo</string>
     <string name="_0_00">$ 0.00</string>
     <string name="tarjeta">Tarjeta</string>
-    <string name="navigation_drawer_open">abrir</string>
-    <string name="navigation_drawer_close">cerrar</string>
+    <string name="agregar">Agregar Tarjeta</string>
+    <string name="guardar">Guardar</string>
+    <string name="numTarjeta">Número de tarjeta</string>
+    <string name="nomTarjeta">Nombre en la tarjeta</string>
+    <string name="moneda">Moneda</string>
 
     <string-array name="payment_methods">
         <item>Efectivo</item>
@@ -27,7 +31,6 @@
     <string name="seleccione_la_categor_a_para_quitar">"Seleccione la categoría para quitar "</string>
 
 
-
     <!--Categorias-->
     <string name="title_categoria">Categorías</string>
     <string name="c_ropa">Ropa</string>
@@ -39,7 +42,7 @@
     <string name="c_niños">Niños</string>
     <string name="c_movil">Móvil</string>
     <string name="c_educacion">Educación</string>
-    <string name="c_electricidad">Electricidad</string>
+    <string name="c_electricidad">Energía</string>
     <string name="c_internet">Internet</string>
     <string name="c_agua">Agua</string>
 
@@ -84,11 +87,10 @@
     <string name="pa_s_de_origen_cuba">País de Origen: Cuba</string>
 
 
-
     <string name="inicio">Inicio</string>
     <string name="estadisticas">Estadisticas</string>
     <string name="m_s">Más</string>
     <string name="cambiar">Cambiar</string>
-
+    <string name="card_count">Cuenta</string>
 
 </resources>

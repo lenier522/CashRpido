@@ -15,8 +15,8 @@
         app:icon="@drawable/ic_calendar"
         android:text="Seleccionar fecha" />
 
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/bar_chart"
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="5dp"

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Ítem 1 -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@mipmap/ic_home"
+        android:title="@string/inicio" />
+
+    <!-- Ítem 2 -->
+    <item
+        android:id="@+id/nav_static"
+        android:icon="@mipmap/ic_statics"
+        android:title="@string/estadisticas" />
+
+    <item
+        android:id="@+id/nav" />
+
+    <!-- Ítem 3 -->
+    <item
+        android:id="@+id/nav_card"
+        android:icon="@mipmap/ic_card"
+        android:title="@string/card_count" />
+
+    <!-- Ítem 4 -->
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@mipmap/ic_more"
+        android:title="@string/m_s" />
+</menu>

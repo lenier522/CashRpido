@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">CashRapide</string>
     <string name="title_home">Comptes</string>
+    <string name="title_card">Cartes</string>
     <string name="efectivo">Espèces</string>
     <string name="_0_00">€ 0.00</string>
     <string name="tarjeta">Carte</string>
-    <string name="navigation_drawer_open">ouvrir</string>
-    <string name="navigation_drawer_close">fermer</string>
+    <string name="agregar">Ajouter une carte</string>
+    <string name="guardar">Garder</string>
+    <string name="numTarjeta">Numéro de carte</string>
+    <string name="nomTarjeta">Nom sur la carte</string>
+    <string name="moneda">Devise</string>
 
     <string-array name="payment_methods">
         <item>Espèces</item>
@@ -86,5 +90,5 @@
     <string name="estadisticas">Statistiques</string>
     <string name="m_s">Plus</string>
     <string name="cambiar">Changer</string>
-
+    <string name="card_count">Compte</string>
 </resources>

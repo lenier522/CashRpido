@@ -1,6 +1,8 @@
 package cu.lenier.cashrpido.bottomsheet;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -20,6 +22,7 @@ import cu.lenier.cashrpido.R;
 public class BottomSheetAbout extends BottomSheetDialogFragment {
 
     ImageView play,face,what;
+    TextView txtVersion;
 
     @Nullable
     @Override
@@ -28,7 +31,20 @@ public class BottomSheetAbout extends BottomSheetDialogFragment {
 
         TextView aboutTitle = view.findViewById(R.id.aboutTitle);
         TextView aboutDescription = view.findViewById(R.id.aboutDescription);
+        txtVersion = view.findViewById(R.id.aboutVersion);
 
+
+        PackageInfo pinfo = null;
+        try {
+            // Usa el contexto del fragmento para obtener el nombre del paquete
+            pinfo = requireContext().getPackageManager().getPackageInfo(requireContext().getPackageName(), 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        double currentVersion = Double.parseDouble((pinfo.versionName));
+        String currentVersionName = String.valueOf(currentVersion);
+
+        txtVersion.setText(currentVersionName);
     
         aboutTitle.setText(R.string.acerca_de);
         aboutDescription.setText(R.string.esta_es_una_aplicaci_n_de_finanzas_dise_ada_para_ayudarte);

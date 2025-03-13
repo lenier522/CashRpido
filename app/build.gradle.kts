@@ -8,9 +8,9 @@ android {
 
     defaultConfig {
         applicationId = "cu.lenier.cashrpido"
-        minSdk = 23
+        minSdk = 24
         targetSdk = 35
-        versionCode = 40122433
+        versionCode = 40122435
         versionName = "1.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -26,8 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -39,6 +39,9 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.mpandroidchart)
     implementation(libs.work.runtime)
+    implementation(libs.lottie)
+    implementation (libs.update.checker)
+    implementation (libs.gson)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
